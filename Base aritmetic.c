@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int lett(char* a) {
+//ritorna la minima base
+int base(char* a) {
     int i;
     int k=0;
     int j= strlen(a);
@@ -23,6 +24,7 @@ int lett(char* a) {
     return d;
 }*/
 
+//eleva a potenza
 int el(int a, int b) {
     if(b==0)
         return 1;
@@ -51,6 +53,7 @@ int el(int a, int b) {
     return k+1;
 }*/
 
+//ritorna la b-esima cifra
 int coef(char* a, int b) {
     int k;
     if((int)a[b]>64 && (int)a[b]<71)
@@ -60,8 +63,9 @@ int coef(char* a, int b) {
     return k;
 }
 
-int base(char* a) {
-    int b=lett(a);
+//converte il numero in base 10
+int conv(char* a) {
+    int b=base(a);
     int c=strlen(a);
     int k=0;
     int i;
@@ -77,6 +81,6 @@ int sum(int a, int b){
 
 
 int main() {
-    printf("%i", sum(base("B95"), base("101101")));
+    printf("%i", sum(conv("B95"), conv("101101")));
     return 0;
 }
