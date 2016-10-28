@@ -1,1 +1,1 @@
-My C solutions for codecon challenge
+My C solutions for codecon challenges
