@@ -2,6 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+//non passa i judge test
+
 int simili(char* a, char* b) {
     int i, k=0;
     for(i=0; a[i]!='\0'; i++) {
